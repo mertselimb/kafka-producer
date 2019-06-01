@@ -9,18 +9,18 @@ public class Data {
         public String logDetail;
 
 
-    public String getJson() {
+        public String getJson() {
 
-        try {
-            return new JSONObject()
-                    .put("timeStamp", this.timeStamp)
-                    .put("logLevel", this.logLevel)
-                    .put("cityName", this.cityName)
-                    .put("logDetail", this.logDetail)
-                    .toString();
-        } catch (Exception exc) {
-            // TODO: handle exception
-        }
+            try {
+                return new JSONObject()
+                        .put("timeStamp", this.timeStamp)
+                        .put("logLevel", this.logLevel)
+                        .put("cityName", this.cityName)
+                        .put("logDetail", this.logDetail)
+                        .toString();
+            } catch (Exception exc) {
+                // TODO: handle exception
+            }
         return "False";
     }
 }

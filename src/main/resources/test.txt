@@ -1,0 +1,1 @@
+{"timeStamp": "2019-03-21 09:59:17.992","logLevel": "INFO","cityName": "Istanbul","logDetail": "Hello-from-Istanbul"}
