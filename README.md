@@ -2,10 +2,10 @@
 
 ##### Because of time problems (finals and thesis) the dashboard is not fully complete but it is stil real-time
 
-###Important note: Producer uses the format that is in the test.txt. Please do not change format nor add out of format text to it otherwise it will broke the consumer.
+### Important note: Producer uses the format that is in the test.txt. Please do not change format nor add out of format text to it otherwise it will broke the consumer.
 If that happens use the clean topic command and then create the topic again before starting.
 
-##To use:
+## To use:
 ### Step: 1
 To pull my repos 
 
@@ -23,20 +23,20 @@ For ssh
 
 docker run --rm -it --net=host landoop/fast-data-dev bash
 
-###Step: 4
+### Step: 4
 For creating topic (not needed)(in ssh)
 
 kafka-topics --zookeeper localhost:2181 --create --topic teb --partitions 1 --replication-factor 1
 
-###Step: 5
+### Step: 5
 Start consumer and producer
 
-###Step: Optional(If out of format may broke consumer)
+### Step: Optional(If out of format may broke consumer)
 For producer (in ssh)
 
 kafka-console-producer --broker-list localhost:9092 --topic teb
 
-###Step: Optional
+### Step: Optional
 For clean up of topic (in ssh)
 
 kafka-topics --zookeeper localhost:2181  --delete --topic teb
@@ -44,14 +44,14 @@ kafka-topics --zookeeper localhost:2181  --delete --topic teb
 
 
 
-##For outputs
+## For outputs
 
-###For db data after consumer is up
+### For db data after consumer is up
 http://localhost:8084/all
 
-###For runtime list after consumer is up
+### For runtime list after consumer is up
 http://localhost:8084/list
 
-###For the city data on the runtime after consumer is up
+### For the city data on the runtime after consumer is up
 http://localhost:8084/graph
 
